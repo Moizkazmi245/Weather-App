@@ -4,7 +4,7 @@ const container2 = document.querySelector(".container2");
 
 btn.addEventListener("click", (e) => {
     console.log(inputValue.value);
-    fetch(`http://api.weatherapi.com/v1/current.json?key=a5da6ef1a5814bbea7c162012240703&q=${inputValue.value}&aqi=yes`)
+    fetch(`http://api.weatherapi.com/v1/current.json?key=a5da6ef1a5814bbea7c162012240703&q=${inputValue.value}&aqi=no`)
         .then((res) => {
             return res.json();
         })
