@@ -1,14 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
-*{
-    font-family: "Parkinsans", sans-serif;
-    margin: 0;
-    padding: 0;
+* {
+  font-family: "Parkinsans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-image: url("./sky-2815020_1280.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+
+.container {
+  text-align: center;
+  padding: 15px;
 }
+
+.container h1 {
+  font-size: 3.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #9acdda;
+  margin-bottom: 70px;
+  text-shadow: 2px 2px 4px #0a6e86;
+}
+
+.container p {
+  font-size: 1.3rem;
+  color: #f7f7f7;
+  margin: 50px;
+
+}
+
+.background-video {
+  position: fixed; /* Fix video in place */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Ensure the video covers the screen without distortion */
+  z-index: -1; /* Push video behind all content */
+}
+
+.container {
+  position: relative; /* Keep content in front of the video */
+  text-align: center; /* Center text */
+  color: white; /* Text color for contrast */
+  z-index: 1; /* Ensure content stays above the video */
+  padding: 20px;
+  /* Add shadow for better readability */
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container1 input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 250px;
+}
+
+.container1 button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container1 button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Main card container */
+.card {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
+    padding: 20px; /* Spacing inside the card */
+    max-width: 300px; /* Card width */
+    margin: 20px auto; /* Center the card */
+    text-align: center; /* Center-align text */
+    font-family: Arial, sans-serif; /* Modern font */
+    z-index: 1;
+    position: relative; /* Ensure it stays in flow */
+}
+
+/* City name */
+.card h1 {
+    font-size: 2rem;
+    color: #333; /* Darker color for contrast */
+    margin-bottom: 10px;
+}
+
+/* Temperature */
+.temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007BFF; /* Light blue for temperature */
+    margin: 10px 0;
+}
+
+/* Temperature details (feels like, humidity, wind speed) */
+.details-temp {
+    font-size: 1rem;
+    color: #555; /* Medium grey for details */
+    line-height: 1.5; /* Spacing between lines */
+}
+
+/* Details inside <p> tags */
+.details-temp p {
+    margin: 5px 0;
+}
+
+/* Highlight spans in details */
+.details-temp span {
+    font-weight: bold;
+    color: #000; /* Slightly darker for emphasis */
+}
+
