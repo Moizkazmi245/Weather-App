@@ -82,22 +82,23 @@
 
 /* Main card container */
 .card {
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
     padding: 20px; /* Spacing inside the card */
     max-width: 300px; /* Card width */
     margin: 20px auto; /* Center the card */
     text-align: center; /* Center-align text */
+    backdrop-filter: blur(20px);
     font-family: Arial, sans-serif; /* Modern font */
     z-index: 1;
     position: relative; /* Ensure it stays in flow */
+    
 }
 
 /* City name */
 .card h1 {
     font-size: 2rem;
-    color: #333; /* Darker color for contrast */
+    color: #141414; /* Darker color for contrast */
     margin-bottom: 10px;
 }
 
@@ -105,7 +106,7 @@
 .temperature {
     font-size: 3rem;
     font-weight: bold;
-    color: #007BFF; /* Light blue for temperature */
+    color: #023e7e; /* Light blue for temperature */
     margin: 10px 0;
 }
 
@@ -119,6 +120,7 @@
 /* Details inside <p> tags */
 .details-temp p {
     margin: 5px 0;
+    color: #000;
 }
 
 /* Highlight spans in details */
